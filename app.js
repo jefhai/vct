@@ -2,14 +2,20 @@ const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
 const socketio = require('socket.io').listen(server)
+const redis = require('redis')
+const redis_client = redis.createClient()
 
 connections = []
 
-server.listen(3000, "0.0.0.0", function () {
+server.listen(3000, "0.0.0.0", function() {
   console.log('Server running... http://localhost:3000')
 })
 
-app.get('/', function (req, res) {
+redis_client.on("error", function(err) {
+    console.log("Error " + err)
+})
+
+app.get('/', function(req, res) {
   res.send('Hello World!')
 })
 
