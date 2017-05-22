@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/jefhai/vct/issues"
   },
-  "homepage": "https://github.com/jefhai/vct#readme"
+  "homepage": "https://github.com/jefhai/vct#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "konva": "^1.6.2",
+    "redis": "^2.7.1",
+    "socket.io": "^2.0.1"
+  }
 }
