@@ -27,6 +27,7 @@
   "dependencies": {
     "express": "^4.15.3",
     "konva": "^1.6.2",
+    "pug": "^2.0.0-rc.1",
     "redis": "^2.7.1",
     "socket.io": "^2.0.1"
   }
