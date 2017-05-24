@@ -32,5 +32,8 @@
     "pug": "2.0.0-rc.1",
     "redis": "2.7.1",
     "socket.io": "2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.1"
   }
 }
