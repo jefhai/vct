@@ -4,7 +4,7 @@
   "description": "A virtual card table for playing Magic the Gathering.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register tests/"
+    "test": "mocha --compilers coffee:coffee-script/register tests/ -R spec"
   },
   "repository": {
     "type": "git",
