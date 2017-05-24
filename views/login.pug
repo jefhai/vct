@@ -12,7 +12,9 @@ block content
 						form.form-horizontal(method='POST' action='/login')
 							fieldset
 								div.form-group
-									input#username.form-control(type='text', placeholder='User Name' name='username')
+									input#username.input-sm.form-control(type='text', placeholder='User Name' name='username')
 								div.form-group
-									input#password.form-control(type='password', placeholder='Password' name='password')
-								button.btn.btn-primary.btn-md(type='submit') Login
+									input#password.input-sm.form-control(type='password', placeholder='Password' name='password')
+								div.btn-group
+									button.btn.btn-primary.btn-sm(type='submit') Login
+									button.btn.btn-primary.btn-sm(type='button' name='register') Register
